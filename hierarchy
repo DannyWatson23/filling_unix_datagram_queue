@@ -1,0 +1,12 @@
+Server
+ - socket
+ - bind
+ - recvfrom
+ - sendto
+
+
+Client
+ - socket
+ - sendto
+ - recvfrom
+ - close
