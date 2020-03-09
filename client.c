@@ -29,7 +29,12 @@ int main(int argc, char *argv[])
  printf("Sent\n");
  count++;
  printf("%i\n", count);
+ if (count >= 200){
+   close(sockfd);
+   break;
+  }
  }
+ puts("Finished sending UDP datagrams...");
  return 0;
 
 }
